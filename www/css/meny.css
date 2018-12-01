@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  text-align: center;
+  align-items: center;  
+}
+
+body {
+  font-family: 'Lora', serif;
+}
+
+main {
+  margin: 30px 80px 30px 80px;
+  padding-bottom: 60px;
+}
+
+.item {
+  align-self: center;
+  text-align: center;
+  padding-top: 70px;
+  line-height: 1.6;
+}
+
+h3 {  
+  font-size: 35px;
+  text-transform: uppercase;  
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom:5px;
+  padding-top:8px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#switch-lang {
+  background-color: #65a53d;
+  border: none;
+  color: #ffffff;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#switch-lang:hover {opacity: 1}

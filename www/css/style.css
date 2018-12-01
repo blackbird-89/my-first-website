@@ -1,0 +1,236 @@
+* {
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lora', serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.first-page {
+  background-image: url("/images/header3.jpg");
+  background-color: #cccccc;
+  height: 60vh;  
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.other-pages {
+  background-image: url("/images/header3.jpg");
+  background-color: #cccccc;
+  height: 40vh;  
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+ul {
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.navigation {
+  float: right;
+}
+
+.nav {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;   
+  text-shadow: 2px 2px 4px #000000;
+}
+
+li a:hover {
+ color: #d6d8db;
+}
+
+.active {
+  color:#daf78a
+}
+
+.title {
+  padding-right: 50px;
+  bottom: 330px;
+}
+
+h1 {
+  font-size: 67px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  text-align: right;  
+}
+
+h2 {
+  font-size: 45px;
+  color:#ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  text-align: right;
+  padding-top: 15px;
+  font-family: 'Parisienne', cursive;
+}
+
+.motto {
+  font-size: 45px;
+  padding-top: 30px; 
+  padding-bottom: 50px;
+  text-align: center;  
+  font-family: 'Parisienne', cursive;
+}
+
+.intro1 {
+  max-width: 650px;
+  margin: auto;
+  font-size: 19px;
+  text-align: center;
+  line-height: 1.4em; 
+  padding-bottom: 35px;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color:#609125; 
+}
+
+footer {
+  font-size: 1.3em;
+  color: #5c5f63;
+  text-shadow: 2px 2px 4px #fff;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top:200px;
+  background-color: #dbf9ca;
+  line-height: 1.3em;
+  padding-top: 20px;
+  width: 100%;
+  height: 20vh;
+ }
+
+.footer1 {
+  float: left;
+}
+
+.footer2 {
+  float:right;
+}
+
+.icons {
+  vertical-align: middle;
+}
+
+.action {
+  cursor: pointer;
+}
+
+/*galleri*/
+
+.intro {
+  font-size: 25px;
+  padding-top: 30px; 
+  text-align: center;
+}
+
+.gallery {
+  margin: 30px 80px 30px 80px;
+  padding-bottom: 45px;
+}
+
+figure { /*det här blir default*/
+  position: relative;
+  width: calc(25% - 10px); /*calc fixar att hover fungerar, så att utrymme mellan bilderna "väljer" inte viss bild.10 efter. vi har 5px margin */
+  float: left; 
+  margin: 5px;  /*fixar radavstånd*/ 
+  line-height: 0;
+}
+
+figure:hover figcaption { /*mellanslag betyder den figcaption som ligger inuti*/
+  display: block;
+}
+
+figure img {
+  width: 100%;
+  vertical-align: middle; /*vi fick kvadrat*/
+}
+
+.big {
+  width: calc(50% - 10px);  /*mer specifik efterson det är en klass, men även eftersn det kommer senare*/
+}
+
+.small {
+  width: calc(20% - 10px);
+}
+
+.large {
+  width: calc(60% - 10px);
+  float: right;
+}
+
+figcaption {
+  display: none; /*så att det visas när mupekaren kommer*/
+  position: absolute; /*när det är position använder vi left, right..*/
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  bottom:  0;
+  left: 0;
+  right: 0;
+  text-shadow: 1px 1px 2px black;
+  padding: 5px;
+  text-align: center;
+  line-height: 1; /*vi fick kvadrat*/
+  font-size: 18px;
+}
+
+.googleMap {  
+  max-width: 43%;  
+  display: inline-block;
+  padding:0;  
+  min-height:250px;  
+  vertical-align: middle;
+  text-align: center;
+  margin: 30px 80px 30px 80px;
+}  
+
+.contact {  
+  width: 35%;  
+  display: inline-block;
+  padding:0;  
+  vertical-align: middle;
+  margin: 30px 80px 30px 30px;
+  text-align: center;
+  line-height: 1.3em;
+}  
+
+h5 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+h6 {
+  font-size: 20px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
